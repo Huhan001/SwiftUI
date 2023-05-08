@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61B4AE822A09862A00EA3F69 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4AE812A09862A00EA3F69 /* HeaderView.swift */; };
 		61EE15952A05776800C0FD14 /* my_firstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EE15942A05776800C0FD14 /* my_firstApp.swift */; };
 		61EE15972A05776800C0FD14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EE15962A05776800C0FD14 /* ContentView.swift */; };
 		61EE15992A05776900C0FD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EE15982A05776900C0FD14 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61B4AE812A09862A00EA3F69 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		61EE15912A05776800C0FD14 /* my first.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my first.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61EE15942A05776800C0FD14 /* my_firstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_firstApp.swift; sourceTree = "<group>"; };
 		61EE15962A05776800C0FD14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				61EE15962A05776800C0FD14 /* ContentView.swift */,
 				61F409002A05B6F50043B970 /* welcomeView.swift */,
 				61F409022A05B71D0043B970 /* ExcerciseView.swift */,
+				61B4AE812A09862A00EA3F69 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B4AE822A09862A00EA3F69 /* HeaderView.swift in Sources */,
 				61F409032A05B71D0043B970 /* ExcerciseView.swift in Sources */,
 				61EE15972A05776800C0FD14 /* ContentView.swift in Sources */,
 				61EE15952A05776800C0FD14 /* my_firstApp.swift in Sources */,

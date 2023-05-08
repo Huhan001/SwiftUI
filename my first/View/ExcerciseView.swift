@@ -12,7 +12,14 @@ struct ExcerciseView: View {
   let exerciseNames = ["Squat", "Step Up", "Burpee", "Sun Salute"]
   let index: Int
     var body: some View {
-        Text(exerciseNames[index])
+      VStack{
+        HeaDviews(exerciseNames: exerciseNames[index])
+        Text("Video Player")
+        Text("Timer")
+        Text("Start/Done button")
+        Text("Rating")
+        Text("History")
+      }
     }
 }
 
@@ -21,3 +28,5 @@ struct ExcerciseView_Previews: PreviewProvider {
       ExcerciseView(index: 0)
     }
 }
+
+

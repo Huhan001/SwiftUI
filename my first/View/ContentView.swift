@@ -10,16 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             TabView {
-              ForEach(0..<4) { index in
-                ExcerciseView(index: index)
-              }
-              .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            }
+              ForEach(0..<4) { one in
+                ExcerciseView(index: one) }
+          }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      ContentView()
     }
 }
