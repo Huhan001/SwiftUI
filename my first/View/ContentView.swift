@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             TabView {
-              ForEach(0..<4) { one in
+              ForEach(Excercise.excercise.indices, id: \.self) { one in
                 ExcerciseView(index: one) }
           }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
