@@ -9,7 +9,6 @@ import SwiftUI
 
 import AVKit // AVKit lets you use high-level types like AVPlayer to play videos with the usual playback controls.
 
-pod 'YouTubePlayerView'
 
 struct ExcerciseView: View {
 // let videoNames = ["squat", "step-up", "burpee", "sun-salute"]
@@ -17,30 +16,30 @@ struct ExcerciseView: View {
   
   let index: Int
   
-  var excercise: Excercise {
-    Excercise.excercise[index]
+  var excercise: Exercise {
+    Exercise.exercises[index]
   } // computed property. 
   
   var body: some View {
-    GeometryReader { geometry in
+    //GeometryReader { geometry in
       VStack{
-        HeaDviews(exerciseNames: excercise.ExcersideName)
+        HeaDviews(exerciseNames: excercise.exerciseName)
           
         if let url = Bundle.main.url(
-          forResource: excercise.VideoName,withExtension: "mp4") {
+          forResource: excercise.videoName,withExtension: "mp4") {
           VideoPlayer(player: AVPlayer(url: url))
-            .frame(height: geometry.size.height * 0.45)
+          //  .frame(height: geometry.size.height * 0.45)
         } else {
-          Text("Couldn't find \(excercise.VideoName).mp4")
+          Text("Couldn't find \(excercise.videoName).mp4")
             .foregroundColor(.red)
         }
+        
+        Text("Timer")
+        Text("Start/Done button")
+        Text("Rating")
+        Text("History")
         }
-          
-          Text("Timer")
-          Text("Start/Done button")
-          Text("Rating")
-          Text("History")
-        }
+       //}
       }
     }
 
